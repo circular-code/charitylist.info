@@ -1,0 +1,89 @@
+import React from 'react';
+import { Button } from '@material-ui/core';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+        <Button color="primary">Hello World</Button>
+        <header>
+            <h1 id="logo">charitylist.info</h1>
+            <h2 id="subHeadline">
+                <span>find</span>
+                <img src="your.svg" alt="your"></img>
+                <span>charity</span>
+            </h2>
+            <nav>
+                <ul>
+                    <li><a class="scroll" href="#searchResults">Search Results</a></li>
+                    <li><a class="scroll" href="#mission">Mission</a></li>
+                    <li><a class="scroll" href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="wrapper">
+            <section id="searchContainer">
+                <article id="search">
+                    <div id="searchField">
+                        <div class="search-pair">
+                            <div class="search-pair-description">
+                                <h4 class="search-pair-title">1: Choose a region</h4>
+                            </div>
+                            <div id="regionInput"></div>
+                        </div>
+                        <div class="search-pair">
+                            <div class="search-pair-description">
+                                <h4 class="search-pair-title">2: Choose a category</h4>
+                            </div>
+                            <div id="categoryInput"></div>
+                        </div>
+                        <button id="go">GO</button>
+                        <div class="search-pair">
+                            <div class="search-pair-description">
+                                <i>3</i>
+                                <h4 class="search-pair-title">Choose a search term</h4>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div id="hiddenContent">
+                    <div id="regionPopup"></div>
+                    <div id="categoryPopup"></div>
+                </div>
+            </section>
+
+            <section id="searchResults">
+                <h3>Search Results</h3>
+                <div id="charitiesGrid"></div>
+            </section>
+
+            <section id="mission">
+                <h3>Mission</h3>
+                <p>This page should serve as an entry point for your research and is meant to provide an unbiased overview over all charities.
+                We try to provide the results in an unbiased way, randomized, no logos, no corrupt rating system etc.
+                The content of the charity should be at the center of attention, not how much money they have or how big their influence is.</p>
+            </section>
+
+            <section id="disclaimer">
+                <h3>Disclaimer</h3>
+                <p>We cannot guarantee for the pages we link to. Surf at your own risk.</p>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a class="scroll" href="#portfolio">Imprint</a></li>
+                <li><a class="scroll" href="#contact">Data Privacy & Protection</a></li>
+                <li><a class="scroll" href="#services">Get in Touch</a></li>
+            </ul>
+            <p>Copyright 2020 charitylist.info</p>
+        </footer>
+        <script src="data.js"></script>
+        <script src="grid.js"></script>
+        <script src="app.js"></script>
+    </div>
+  );
+}
+
+export default App;
