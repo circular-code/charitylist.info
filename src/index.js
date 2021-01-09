@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Header, Footer, Grid, Search } from './components/index.js';
 import './index.css';
 
+//TODO: build folder live laufen lassen und mit aktueller version vergleichen (google pagespeed, vorher aktuelle pagespeed scores und ladezeiten notieren)
 //TODO: Google seo optimierungen
 //TODO: impressum etc.
 //TODO: "DONE" Button after category selection
