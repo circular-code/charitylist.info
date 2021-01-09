@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Grid() {
+export default function Grid() {
   const alertName = () => {
     alert('John Doe');
   };
@@ -12,6 +12,3 @@ function Grid() {
     </section>
   );
 };
-
-export default Grid;
-

@@ -1,24 +1,21 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
+import { CountrySelect, CategorySelect } from './index';
 
-function Search() {
-  const alertName = () => {
-    alert('John Doe');
-  };
-
+export default function Search() {
   return (
     <section id="searchContainer">
         <article id="search">
             <div id="searchField">
                 <div className="search-pair">
                     <div className="search-pair-description">
-                        <h4 className="search-pair-title">1: Choose a region</h4>
+                        <CountrySelect/>
                     </div>
                     <div id="regionInput"></div>
                 </div>
                 <div className="search-pair">
                     <div className="search-pair-description">
-                        <h4 className="search-pair-title">2: Choose a category</h4>
+                        <CategorySelect/>
                     </div>
                     <div id="categoryInput"></div>
                 </div>
@@ -37,5 +34,3 @@ function Search() {
     </section>
   );
 };
-
-export default Search;

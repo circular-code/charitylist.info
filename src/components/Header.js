@@ -1,7 +1,7 @@
 import React from 'react';
 import your from './your.svg';
 
-function Header() {
+export default function Header() {
   const alertName = () => {
     alert('John Doe');
   };
@@ -24,5 +24,3 @@ function Header() {
     </header>
   );
 };
-
-export default Header;
