@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/charitylist.info/static/css/main.1e8718cc.chunk.css",
-    "main.js": "/charitylist.info/static/js/main.f808b357.chunk.js",
-    "main.js.map": "/charitylist.info/static/js/main.f808b357.chunk.js.map",
-    "runtime-main.js": "/charitylist.info/static/js/runtime-main.5791ae27.js",
-    "runtime-main.js.map": "/charitylist.info/static/js/runtime-main.5791ae27.js.map",
-    "static/js/2.96bbaef6.chunk.js": "/charitylist.info/static/js/2.96bbaef6.chunk.js",
-    "static/js/2.96bbaef6.chunk.js.map": "/charitylist.info/static/js/2.96bbaef6.chunk.js.map",
-    "index.html": "/charitylist.info/index.html",
-    "precache-manifest.76bf637c502d2bf69c69722633edcf5d.js": "/charitylist.info/precache-manifest.76bf637c502d2bf69c69722633edcf5d.js",
-    "service-worker.js": "/charitylist.info/service-worker.js",
-    "static/css/main.1e8718cc.chunk.css.map": "/charitylist.info/static/css/main.1e8718cc.chunk.css.map",
-    "static/js/2.96bbaef6.chunk.js.LICENSE.txt": "/charitylist.info/static/js/2.96bbaef6.chunk.js.LICENSE.txt",
-    "static/media/your.svg": "/charitylist.info/static/media/your.fe4917e4.svg"
+    "main.css": "/static/css/main.1e8718cc.chunk.css",
+    "main.js": "/static/js/main.f808b357.chunk.js",
+    "main.js.map": "/static/js/main.f808b357.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ad42e892.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ad42e892.js.map",
+    "static/js/2.96bbaef6.chunk.js": "/static/js/2.96bbaef6.chunk.js",
+    "static/js/2.96bbaef6.chunk.js.map": "/static/js/2.96bbaef6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8aeee6a6ed677f7b4e22b504ecbf9286.js": "/precache-manifest.8aeee6a6ed677f7b4e22b504ecbf9286.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1e8718cc.chunk.css.map": "/static/css/main.1e8718cc.chunk.css.map",
+    "static/js/2.96bbaef6.chunk.js.LICENSE.txt": "/static/js/2.96bbaef6.chunk.js.LICENSE.txt",
+    "static/media/your.svg": "/static/media/your.fe4917e4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5791ae27.js",
+    "static/js/runtime-main.ad42e892.js",
     "static/js/2.96bbaef6.chunk.js",
     "static/css/main.1e8718cc.chunk.css",
     "static/js/main.f808b357.chunk.js"
