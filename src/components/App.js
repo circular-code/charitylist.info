@@ -2,7 +2,7 @@ import React from 'react';
 import { Header, Footer, Grid, Search } from './index.js';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
+import ResultGrid from './ResultGrid.js';
 
 export default function App() {
 
@@ -55,7 +55,7 @@ export default function App() {
             <Header/>
             <main id="wrapper">
                 <Search/>
-                <Grid/>
+                <ResultGrid/>
                 <section id="mission">
                     <h3>Mission</h3>
                     <p>This page should serve as an entry point for your research and is meant to provide an unbiased overview over all charities.

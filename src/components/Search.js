@@ -29,7 +29,7 @@ const classes = useStyles();
                 variant="filled"
                 color="primary"
             />
-            <Button id="go" color="primary">GO</Button>
+            <Button onClick={() => { document.querySelector('#searchResults').style.display = 'block'; }} id="go" color="primary">GO</Button>
         </form>
         <div id="hiddenContent">
             <div id="regionPopup"></div>

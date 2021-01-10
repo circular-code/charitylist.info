@@ -5,7 +5,7 @@ import './index.css';
 
 //TODO: Google seo optimierungen
 //TODO: impressum etc.
-//TODO: Dark Mode
+//TODO: Dark Mode verstehen/verbessern /siehe material-ui demp dark mode
 //TODO: "DONE" Button after category selection
 //TODO: selected:true für qs übergebene regions
 //TODO: Daten direkt nach Value Änderung reloaden wenn Suchergebnisse offen?

@@ -241,12 +241,6 @@ nav ul {
     background-color: transparent;
 }
 
-#charitiesGrid {
-    position: relative;
-    bottom: 60px;
-    margin-bottom: -60px;
-}
-
 .category-tag {
     background: #dedede;
     padding: 0.5rem 1rem;
@@ -328,6 +322,7 @@ section > h3 {
     background: #44e073;
     color: white;
     padding: 5px 10px;
+    margin-bottom: 1rem;
 }
 
 section:not(#searchResults) > h3 {
