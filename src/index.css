@@ -7,30 +7,51 @@ body {
 }
 
 #logo {
-    font-size: 5rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 25px;
     color: #44e073;
-    text-decoration: underline;
+    position: relative;
+    top: 8px;
 }
 
 #subHeadline {
-    font-size: 41px;
+    font-size: 1rem;
     color: #929292;
     font-weight: lighter;
-    letter-spacing: 2px;
-    margin-left: 30px;
+    margin-top: 14px;
+    margin-left: 2rem;
 }
 
-#logo, #subHeadline {
-    display: inline-block;
+#subHeadline b:before {
+    content: '';
+    border-bottom: 2px solid #44e073;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 25px;
+    /* display: block; */
+}
+
+#subHeadline b {
+    letter-spacing: initial;
+    color: #000;
+    padding: 0 5px;
+}
+
+header {
+    display: flex;
+}
+
+header > div {
+    flex-grow: 1;
 }
 
 #subHeadline img {
-    width: 85px;
+    width: 50px;
     opacity: 0.6;
     position: relative;
-    top: 12px;
+    top: 9px;
+    padding: 0 6px;
 }
 
 #searchField {
@@ -253,7 +274,11 @@ img.charity-link-button {
     opacity: 50%;
 }
 
-header, section, footer {
+header {
+    padding: 1rem 2rem;
+}
+
+section, footer {
     padding: 2rem;
 }
 

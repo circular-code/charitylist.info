@@ -4,7 +4,7 @@ import { Select, MenuItem, InputLabel, FormControl, makeStyles } from '@material
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
-        minWidth:240,
+        minWidth:300,
         fontSize: 15,
         '& > span': {
             marginRight: 10,
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     selectEmpty: {
-        rginTop: theme.spacing(2),
+        marginTop: theme.spacing(2),
     },
 }));
 
