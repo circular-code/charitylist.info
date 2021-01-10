@@ -2,7 +2,6 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import { makeStyles } from '@material-ui/core/styles';
 
 // ISO 3166-1 alpha-2
 function countryToFlag(isoCode) {
@@ -13,27 +12,14 @@ function countryToFlag(isoCode) {
     : isoCode;
 }
 
-const useStyles = makeStyles({
-  option: {
-    fontSize: 15,
-    '& > span': {
-      marginRight: 10,
-      fontSize: 18,
-    },
-  },
-});
-
 export default function CountrySelect() {
-  const classes = useStyles();
 
   return (
     <Autocomplete
       id="country-select"
-      style={{ width: 300 }}
+      multiple
+      style={{ width: 400 }}
       options={countries}
-      classes={{
-        option: classes.option,
-      }}
       autoHighlight
       getOptionLabel={(option) => option.label}
       renderOption={(option) => (
@@ -46,7 +32,7 @@ export default function CountrySelect() {
         <TextField
           {...params}
           label="Country"
-          variant="outlined"
+          variant="filled"
           inputProps={{
             ...params.inputProps,
             autoComplete: 'new-password', // disable autocomplete and autofill

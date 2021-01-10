@@ -59,6 +59,10 @@ header > div {
     flex-wrap: wrap;
 }
 
+.MuiInputBase-root {
+    background: white;
+}
+
 #go {
     background: #ffffff;
     outline: unset;
@@ -72,7 +76,6 @@ header > div {
     cursor: pointer;
     width: 200px;
     height: 58px;
-    margin-top: 58px;
 }
 
 #go:hover {
@@ -332,7 +335,13 @@ section:not(#searchResults) > h3 {
 }
 
 section#searchContainer {
-    background: #44e073;
+    background: rgb(68,224,115);
+    background: linear-gradient(45deg, rgba(68,224,115,1) 0%, rgba(0,255,179,1) 100%);
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h4.search-pair-title {

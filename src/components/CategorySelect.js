@@ -1,55 +1,42 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
-import { Select, MenuItem, InputLabel, FormControl, makeStyles } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
-    formControl: {
-        minWidth:300,
-        fontSize: 15,
-        '& > span': {
-            marginRight: 10,
-            fontSize: 18,
-        },
-    },
-    selectEmpty: {
-        marginTop: theme.spacing(2),
-    },
-}));
+export default function ComboBox() {
 
-export default function CategorySelect() {
-    const classes = useStyles();
-  
-    return (
-        <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel id="demo-simple-select-outlined-label">Category</InputLabel>
-        <Select
-          labelId="demo-simple-select-outlined-label"
-          id="demo-simple-select-outlined"
-          label="Category"
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={"animals"}>animals</MenuItem>
-          <MenuItem value={"alcohol"}>alcohol</MenuItem>
-          <MenuItem value={"drugs"}>drugs</MenuItem>
-          <MenuItem value={"culture"}>culture</MenuItem>
-          <MenuItem value={"community"}>community</MenuItem>
-          <MenuItem value={"disabled"}>disabled</MenuItem>
-          <MenuItem value={"family"}>family</MenuItem>
-          <MenuItem value={"youth"}>youth</MenuItem>
-          <MenuItem value={"kids"}>kids</MenuItem>
-          <MenuItem value={"sport"}>sport</MenuItem>
-          <MenuItem value={"violence"}>violence</MenuItem>
-          <MenuItem value={"education"}>education</MenuItem>
-          <MenuItem value={"environment"}>environment</MenuItem>
-          <MenuItem value={"health"}>health</MenuItem>
-          <MenuItem value={"old"}>old</MenuItem>
-          <MenuItem value={"unemployment"}>unemployment</MenuItem>
-          <MenuItem value={"rights"}>rights</MenuItem>
-          <MenuItem value={"religion"}>religion</MenuItem>
-          <MenuItem value={"research"}>research</MenuItem>
-        </Select>
-      </FormControl>
-    );
+  return (
+    <Autocomplete
+      multiple
+      id="combo-box-demo"
+      options={categories}
+      getOptionLabel={(option) => option.title}
+      style={{ width: 400 }}
+      renderInput={(params) => <TextField {...params} label="Category" variant="filled" />}
+    />
+  );
 }
+
+// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
+const categories = [
+  { title: "animals"},
+  { title: "alcohol"},
+  { title: "drugs"},
+  { title: "culture"},
+  { title: "community"},
+  { title: "disabled"},
+  { title: "family"},
+  { title: "youth"},
+  { title: "kids"},
+  { title: "sport"},
+  { title: "violence"},
+  { title: "education"},
+  { title: "environment"},
+  { title: "health"},
+  { title: "old"},
+  { title: "unemployment"},
+  { title: "rights"},
+  { title: "religion"},
+  { title: "research"}
+];
